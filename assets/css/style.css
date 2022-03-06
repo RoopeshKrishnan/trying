@@ -146,6 +146,10 @@ body {
   z-index: 1000;
 }
 
+.header_flexbox h2{
+  font-weight: bold;
+}
+
 #logo_first_letter {
   font-size: 2.9rem;
   font-family: 'Marck Script', cursive;
@@ -222,7 +226,7 @@ body {
 .banner_section{
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.151), rgba(0, 0, 0, 0.185)),
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.329)),
   url("../images/banner_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -251,11 +255,145 @@ body {
 }
 
 
-.banner_flexbox h1{
+.banner_text h1{
   
-  font-size: 6vw
+  font-size: 5.5rem;
+  font-weight: bolder;
+  border:5px solid red;
+   box-sizing: border-box;
 
 }
+.banner_text p{
+  font-size: 2.19rem;
+}
+
+.banner_text{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+
+@media (max-width:780px){
+
+  .banner_text h1{
+  
+    font-size: 3.6rem;
+    font-weight: bolder;
+    border:5px solid red;
+
+     box-sizing: border-box;
+  
+  }
+  .banner_text p{
+    font-size: 2.2rem;
+  }
+
+}
+
+
+
+@media (max-width:500px){
+
+  .banner_text h1{
+  
+    font-size: 2.55rem;
+    font-weight: bolder;
+    border: double;
+    border:2.5px solid red;
+
+  
+  }
+  .banner_text p{
+    font-size: 1.2rem;
+  }
+  /*header*/
+  .header_flexbox h2{
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  #logo_first_letter {
+    font-size: 1.6rem;
+    font-family: 'Marck Script', cursive;
+    font-weight: bolder;
+    color: rgb(247, 21, 21);
+  }
+  /* end of header*/
+}
+
+@media (max-width:320px){
+
+  .banner_text h1{
+  
+    font-size: 2rem;
+    font-weight: bolder;
+    border:3px solid red;
+
+     box-sizing: border-box;
+  
+  }
+  .banner_text p{
+    font-size: 1rem;
+  }
+
+/*header*/
+.header_flexbox h2{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#logo_first_letter {
+  font-size: 1.5rem;
+  font-family: 'Marck Script', cursive;
+  font-weight: bolder;
+  color: rgb(247, 21, 21);
+}
+/* end of header*/
+
+
+}
+
+@media (max-width:250px){
+
+  .banner_text h1{
+  
+    font-size: .7rem;
+    font-weight: bolder;
+    border:1px solid red;
+
+     box-sizing: border-box;
+  
+  }
+  .banner_text p{
+    font-size: .4rem;
+  }
+/*header*/
+.header_flexbox h2{
+  font-weight: bold;
+}
+
+#logo_first_letter {
+  font-size: 1rem;
+  font-family: 'Marck Script', cursive;
+  font-weight: bolder;
+  color: rgb(247, 21, 21);
+}
+/* end of header*/
+
+
+
+
+
+}
+
+
+
+
+
+
+
 /*new banner end*/
 
 
